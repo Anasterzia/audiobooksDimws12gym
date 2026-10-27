@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Διαχείριση καταλόγου</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html"><span class="dot"></span>Ηχητική Βιβλιοθήκη</a><span class="meta">· Βοηθός διαχείρισης</span></header>
+<main>
+  <div class="note">Αυτή η σελίδα δεν αποθηκεύει τίποτα online. Προσθέτετε ή αλλάζετε βιβλία, πατάτε <b>«Λήψη books.json»</b> και αντικαθιστάτε το αρχείο <code>books.json</code> στο GitHub (<i>Add file → Upload files</i>). Τα εξώφυλλα ανεβαίνουν στον φάκελο <code>covers/</code>.</div>
+  <div class="row" style="margin-bottom:16px">
+    <button class="btn primary" id="new">+ Νέο βιβλίο</button>
+    <button class="btn" id="dl">Λήψη books.json</button>
+    <label class="btn" style="margin:6px 0 0">Άνοιγμα υπάρχοντος books.json<input type="file" id="open" accept="application/json,.json" hidden></label>
+  </div>
+  <div id="view"></div>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
